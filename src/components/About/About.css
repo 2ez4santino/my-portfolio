@@ -1,0 +1,134 @@
+.about__container {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Avatar placeholder */
+.about__image-wrapper {
+  flex: 0 0 260px;
+  display: flex;
+  justify-content: center;
+}
+
+.about__image-box {
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+
+.about__avatar {
+  width: 240px;
+  height: 240px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--accent) 0%, #5e5ce6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--bg);
+  position: relative;
+  z-index: 1;
+}
+
+.about__image-border {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 240px;
+  height: 240px;
+  border: 2px solid var(--accent);
+  border-radius: 16px;
+  z-index: 0;
+  transition: transform 0.3s;
+}
+
+.about__image-box:hover .about__image-border {
+  transform: translate(-6px, -6px);
+}
+
+/* Text */
+.about__text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about__text p {
+  color: #8892b0;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.about__text strong {
+  color: var(--accent);
+}
+
+.about__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.about__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.about__detail-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #5a6282;
+  font-weight: 600;
+}
+
+.about__detail-value {
+  color: #ccd6f6;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.about__detail-value--green {
+  color: #50fa7b;
+}
+
+.about__resume-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.75rem 1.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid var(--accent);
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.about__resume-btn:hover {
+  background: transparent;
+  color: var(--accent);
+}
+
+@media (max-width: 700px) {
+  .about__container {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .about__image-wrapper {
+    flex: none;
+  }
+
+  .about__details {
+    grid-template-columns: 1fr;
+  }
+}
