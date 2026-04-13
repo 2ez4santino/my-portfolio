@@ -3,8 +3,9 @@ import {
   FaReact, FaNodeJs, FaPython, FaGitAlt, FaHtml5, FaCss3Alt, FaNetworkWired, FaUserSecret,
 } from 'react-icons/fa';
 import {
-  SiJavascript, SiHackthebox, SiAndroidstudio,
+  SiJavascript, SiHackthebox, SiAndroidstudio, SiArduino,
 } from 'react-icons/si';
+import { TbBrandAdobePhotoshop, TbBrandAdobeIllustrator } from 'react-icons/tb';
 import './Skills.css';
 
 const skills = [
@@ -16,6 +17,9 @@ const skills = [
   { icon: <FaPython />,       label: 'Python',     color: '#3776ab' },
   { icon: <FaGitAlt />,       label: 'Git',        color: '#f05032' },
   { icon: <SiAndroidstudio />, label: 'Android Studio', color: '#3ddc84' },
+  { icon: <SiArduino />,      label: 'Arduino Uno', color: '#00979d' },
+  { icon: <TbBrandAdobePhotoshop />, label: 'Adobe Photoshop', color: '#31a8ff' },
+  { icon: <TbBrandAdobeIllustrator />, label: 'Adobe Illustrator', color: '#ff9a00' },
   { icon: <FaNetworkWired />, label: 'Cisco Networking', color: '#1ba0d7' },
   { icon: <FaUserSecret />,   label: 'TryHackMe',  color: '#d32f2f' },
   { icon: <SiHackthebox />,   label: 'Hack The Box', color: '#9fef00' },
