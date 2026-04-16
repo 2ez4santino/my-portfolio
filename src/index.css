@@ -35,7 +35,8 @@ body {
 #about  { background: var(--bg-alt); }
 #skills { background: var(--bg); }
 #projects { background: var(--bg-alt); }
-#contact  { background: var(--bg); }
+#references { background: var(--bg); }
+#contact  { background: var(--bg-alt); }
 
 a { text-decoration: none; }
 

@@ -2,6 +2,10 @@ import React from 'react';
 import './About.css';
 
 const About = () => {
+  const avatarStyle = {
+    backgroundImage: `url(${process.env.PUBLIC_URL}/alfonso.jpg)`,
+  };
+
   return (
     <section id="about" className="about section">
       <div className="section__header">
@@ -12,9 +16,7 @@ const About = () => {
       <div className="about__container">
         <div className="about__image-wrapper">
           <div className="about__image-box">
-            <div className="about__avatar">
-              <span>A</span>
-            </div>
+            <div className="about__avatar" style={avatarStyle} aria-label="Profile photo" />
             <div className="about__image-border" />
           </div>
         </div>
